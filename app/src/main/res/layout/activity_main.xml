@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ike_1202154360_modul1.android.example.com.studycase.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Makan Malam"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/tempat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="dengan milea"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="pesanan"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/menu"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="jumlah"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/eatbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/jumlah"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="34dp"
+        android:text="EATBUS"
+        android:onClick="selectEatbus"/>
+
+    <Button
+        android:id="@+id/abnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eatbus"
+        android:layout_alignBottom="@+id/eatbus"
+        android:layout_alignEnd="@+id/textView"
+        android:text="ABNORMAL"
+        android:onClick="selectAbnormal"/>
+</RelativeLayout>
